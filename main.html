@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas13 - Dawla Izza</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewpsort" content="width=device-width, initial-scale=1.0">
+  </head> 
+  <body class="w3-khaki">
+    <script>
+      function openHal(namahal) {
+       var i;
+       var x = document.getElementsByClassName("halaman");
+       for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+       }
+       document.getElementById(namahal).style.display = "block";
+      }
+    </script>
+        
+    <img src="maple2.jpg" style="width: 100%; height: 40%;">      
+    <div class="w3-bar w3-orange">
+      <button class="w3-bar-item w3-button" onclick="openHal('Welcome')">Home</button> 
+      <button class="w3-bar-item w3-button" onclick="openHal('Top')">Top</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Bottom')">Bottom</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Left')">Left</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Right')">Right</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Opacity')">Opacity</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Fading')">Fading</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Zoom')">Zoom</button>
+      <button class="w3-bar-item w3-button" onclick="openHal('Spin')">Spin</button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Animasi</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button class="w3-bar-item w3-button" onclick="openHal('Top')">Top</button>
+          <button class="w3-bar-item w3-button" onclick="openHal('Bottom')">Bottom</button>
+          <button class="w3-bar-item w3-button" onclick="openHal('Left')">Left</button>
+        </div>
+      </div>
+      <button class="w3-bar-item w3-button" onclick="openHal('About')">About</button>
+    </div>
+    
+    <div id="Welcome" class="w3-container halaman w3-animate-zoom" style="display:block;">
+      <h1>Welcome</h1>
+      <p style="margin-top: -5px;">Di situs ini saya akan menjelaskan beberapa class yang tersedia pada
+        framework 'w3.css' yang berfungsi untuk memberikan animasi kepada sebuah elemen.
+        Beberapa contoh class tersebut diantaranya:
+        <ul style="margin-top: -6px;">
+          <li>Top</li>
+          <li>Bottom</li>
+          <li>Left</li>
+          <li>Right</li>
+          <li>Zoom</li>
+          <li>Fading</li>
+        </ul>
+      </p>
+    </div>
+    
+    <div id="Top" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-top</h2>
+      <p>w3-animate-top berfungsi untuk animasi suatu elemen dari atas ke bawah. 
+        Animasi tersebut akan terjadi sekali setiap kali page di-<i>reload</i>.  
+        Contoh w3-animate-top diaplikasikan pada gambar berikut:
+      </p>
+      <img class="w3-animate-top" src="forest.jpg" style="width:40%">
+    </div>
+    
+    <div id="Bottom" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-bottom</h2>
+      <p>w3-animate-bottom berfungsi untuk animasi suatu elemen dari bawah ke atas.
+      Animasi tersebut akan terjadi sekali setiap kali page di-<i>reload</i>. 
+      Contoh w3-animate-bottom diaplikasikan pada gambar berikut:</p>
+      <img class="w3-animate-bottom" src="fog.jpg" style="width:40%;">
+    </div>
+    
+    <div id="Left" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-left</h2>
+      <p>w3-animate-left berfungsi untuk animasi suatu elemen dari kiri ke kanan.
+        Animasi tersebut akan terjadi sekali setiap kali page di-<i>reload</i>. 
+        Contoh w3-animate-left diaplikasikan pada gambar berikut:</p>
+      <img class="w3-animate-left" src="road.jpg" style="width:40%;">
+    </div>
+    
+    <div id="Right" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-right</h2>
+      <p>w3-animate-right berfungsi untuk animasi suatu elemen dari kanan ke kiri.
+        Animasi tersebut akan terjadi sekali setiap kali page di-<i>reload</i>. 
+        Contoh w3-animate-right diaplikasikan pada gambar berikut:</p>
+      <img class="w3-animate-right" src="mysterious.jpg" style="width:40%;">
+    </div>
+    
+    <div id="Opacity" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-opacity</h2>
+      <p>w3-animate-opacity berfungsi untuk animasi suatu elemen dengan membuat ketebalan (opacity) elemen
+        muncul dari 0% hingga 100%. Animasi tersebut akan terjadi sekali setiap kali page di-<i>reload</i>. 
+        Contoh w3-animate-opacity diaplikasikan pada gambar berikut:</p>
+      <img class="w3-animate-opacity" src="rocks.jpg" style="width:40%;">
+    </div>
+    
+    <div id="Fading" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-fading</h2>
+      <p>w3-animate-fading berfungsi untuk animasi suatu elemen dengan menghilangkan dan memunculkan elemen secara berulang kali.
+        Animasi tersebut akan terjadi terus menerus selama halaman page masih jalan. 
+        Contoh w3-animate-fading diaplikasikan pada gambar berikut:</p>
+      <img class="w3-animate-fading" src="sunset.jpg" style="width:40%;">
+    </div>
+    
+    <div id="Zoom" class="w3-container halaman" style="display:none">
+      <h2>w3-animate-zoom</h2>
+      <p>w3-animate-zoom berfungsi untuk animasi suatu elemen dengan membesarkan elemen dari ukuran 0% hingga ukuran 100%.
+        Animasi tersebut akan terjadi sekali setiap kali page di-<i>reload</i>. 
+        Contoh w3-animate-zoom diaplikasikan pada gambar berikut:</p>
+      <img class="w3-animate-zoom" src="tree.jpg" style="width:40%;">
+    </div>
+    
+    <div id="Spin" class="w3-container halaman" style="display:none">
+      <h2>w3-spin</h2>
+      <p>w3-spin berfungsi untuk animasi suatu elemen dengan memutar elemen.
+      w3-animate-spin akan berfungsi secara terus menerus selama situs page masih jalan.
+      Contoh w3-spin diaplikasikan pada gambar berikut.</p>
+      <i class="fa fa-spinner w3-spin" style="font-size: 64px;"></i>
+    </div>
+
+    <div id="About" class="w3-container halaman" style="display:none">
+      <h2>About</h2>
+      <p>TUGAS PEMROGRAMAN WEB-1
+        <br>Tugas13
+        <br>10122034 - Dawla Izza Al-Din Noor
+      </p>
+    </div>
+  </body>
+</html>
+
